@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Plan a Surprise Birthday</title>
+    <!----><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/G08_Plan_a_Surprise_Birthday.json", {onProgress: UnityProgress});
+    </script>
+
+    
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VGQVBXRCHB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-VGQVBXRCHB');
+    gtag('config', 'UA-59450247-7');
+  </script>
+
+
+
+    <!----><script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+  <div id= "custom-logo" hidden></div>
+
+  <div id= "custom-loader">
+  <div class = "fill"></div>
+  <div class = "label"></div>
+  </div>
+
+   <div id="unityContainer" style="position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%);
+                                    transform: translate(-50%, -50%); width: 100%; height: 100%;"></div>
+     <script>
+        setTimeout(function()
+        {
+       $("#unityContainer").find("button").click();
+        },50);
+    </script>
+  </body>
+</html>
